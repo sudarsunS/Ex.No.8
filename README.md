@@ -1,201 +1,424 @@
-# Ex.No.7 — AI-Assisted Workflow Automation Using Structured Prompts
+# EXP-08: Prompt Engineering for AI Workflow Automation
 
-
-REGISTER NUMBER: 212224063003
-
-
----
-
-## Aim
-
-To automate common engineering-project documentation and communication tasks — Email Writing, Meeting Minutes, Task Planning, Project Scheduling, Requirement Documentation, and FAQ Generation — using structured prompts, and to compile the outputs into a single automated workflow document for a real engineering project scenario.
-
-**AI Tools Required:** ChatGPT, Claude, Gemini (any AI text-generation tool capable of following structured, template-based prompts).
+### Date : 03.09.2026
+### Register No : 212224063003
 
 ---
 
-## Engineering Example Selected
+# AIM
 
-**Project: Drone Survey Project**
-
-**Context:** A student team is developing an autonomous drone-based land survey system for mapping agricultural fields and generating elevation/vegetation reports. The team needs to manage communication, meetings, tasks, scheduling, requirements, and stakeholder queries throughout the project lifecycle — this experiment automates that documentation workflow using structured AI prompts.
+To design structured prompts for automating common workflow tasks such as email writing, meeting minutes, task planning, project scheduling, requirement documentation, and FAQ generation using Generative AI.
 
 ---
 
-## Procedure
+# OBJECTIVE
 
-1. Identify the recurring documentation/communication tasks in a typical engineering project lifecycle.
-2. For each task, design a **structured prompt** (clear role, context, required fields, and output format) rather than an open-ended request.
-3. Run each structured prompt through an AI tool and record the output.
-4. Review each output for accuracy, completeness, and professional tone.
-5. Compile all six automated outputs into a single **Automated Workflow Documentation** package for the Drone Survey Project.
+The objective of this experiment is to demonstrate how structured prompts can automate repetitive workflow activities and improve the efficiency, consistency, and clarity of project management.
 
 ---
 
-## 1. Email Writing (Automated)
+# ENGINEERING USE CASE
 
-**Structured Prompt:**
-> "Write a professional email from a final-year engineering student to the faculty project guide, requesting approval to procure a LiDAR sensor module for a drone survey project. Include: subject line, greeting, purpose, brief justification (2–3 lines), estimated cost, and a polite closing requesting a reply by Friday."
+## College Symposium Management
 
-**Generated Output (sample):**
-> **Subject:** Request for Approval — LiDAR Sensor Procurement for Drone Survey Project
+A college is organizing a technical symposium with multiple events, student participants, faculty coordinators, judges, sponsors, and volunteers.
+
+The workflow requires:
+
+- Planning events
+- Assigning responsibilities
+- Scheduling activities
+- Communicating with participants
+- Recording meetings
+- Documenting requirements
+- Answering common questions
+
+AI is used to automate these tasks using structured prompts.
+
+---
+
+# WORKFLOW
+
+```text
+Symposium Requirements
+          ↓
+     Task Planning
+          ↓
+   Project Scheduling
+          ↓
+   Requirement Document
+          ↓
+    Meeting Minutes
+          ↓
+      Email Writing
+          ↓
+      FAQ Generation
+          ↓
+  Automated Workflow
+```
+
+---
+
+# 1. EMAIL WRITING
+
+## Purpose
+
+Generate professional emails quickly using structured information.
+
+## Prompt
+
+> Act as a college event coordinator. Write a professional email inviting students to participate in a technical symposium.
 >
-> Dear Professor,
+> Event Name: TechFusion 2026  
+> Date: 20 September 2026  
+> Venue: Main Auditorium  
+> Registration Deadline: 15 September 2026  
+> Events: Paper Presentation, Coding Contest, Project Expo  
 >
-> I hope you are doing well. As part of our final-year Drone Survey Project, our team requires a LiDAR sensor module to accurately capture elevation data for the agricultural field mapping module. The sensor will improve terrain-mapping accuracy significantly compared to our current camera-only approach. The estimated cost of the module is ₹8,500, within our allocated project budget.
->
-> Could you kindly review and approve this procurement? We would appreciate a response by Friday so we can proceed with ordering in time for our next testing phase.
->
-> Thank you for your continued guidance.
->
-> Regards,
-> [Team Name], Drone Survey Project Team
+> Include a clear subject, greeting, event details, registration deadline, and a polite closing.
+
+## Sample Output
+
+### Subject: Invitation to TechFusion 2026
+
+Dear Students,
+
+We are pleased to invite you to **TechFusion 2026**, a technical symposium organized at the college on **20 September 2026** at the **Main Auditorium**.
+
+Participants can register for events including:
+
+- Paper Presentation
+- Coding Contest
+- Project Expo
+
+The registration deadline is **15 September 2026**.
+
+We encourage all interested students to participate and showcase their technical skills.
+
+Regards,  
+**Symposium Organizing Committee**
+
+## Benefit
+
+- Saves writing time
+- Maintains professional tone
+- Produces consistent communication
 
 ---
 
-## 2. Meeting Minutes (Automated)
+# 2. MEETING MINUTES
 
-**Structured Prompt:**
-> "Generate meeting minutes for a project team meeting with the following details: Date: [date], Attendees: 4 team members + guide, Agenda: review flight-controller integration progress, discuss LiDAR procurement, assign next sprint tasks. Format as: Meeting Title, Date, Attendees, Agenda, Discussion Summary, Action Items with owners and due dates."
+## Purpose
 
-**Generated Output (sample):**
+Convert meeting discussions into structured minutes.
 
-| Field | Details |
-|---|---|
-| Meeting Title | Drone Survey Project — Weekly Review |
-| Date | [Insert Date] |
-| Attendees | Team Members A, B, C, D; Project Guide |
-| Agenda | Flight-controller integration status, LiDAR procurement update, sprint task assignment |
-| Discussion Summary | Flight-controller PID tuning is 70% complete; minor drift observed during hover tests. LiDAR procurement approved, expected delivery in 5 days. Team agreed to begin sensor-fusion module design in parallel. |
-| Action Items | 1. Member A — Fix hover drift by refining PID gains (Due: 3 days). 2. Member B — Track LiDAR delivery and prepare mounting bracket (Due: 5 days). 3. Member C — Draft sensor-fusion architecture (Due: 1 week). 4. Member D — Update project documentation with current progress (Due: 3 days). |
+## Prompt
 
----
+> Convert the following symposium meeting discussion into formal meeting minutes. Include date, attendees, decisions, assigned responsibilities, deadlines, and action items.
+>
+> Discussion:
+> - Symposium scheduled for 20 September.
+> - Registration portal must be completed by 5 September.
+> - Faculty coordinator will approve event rules.
+> - Student volunteers will manage registration desks.
+> - Technical team will arrange projectors and internet connectivity.
 
-## 3. Task Planning (Automated)
+## Sample Output
 
-**Structured Prompt:**
-> "Create a task breakdown for the next two weeks of the Drone Survey Project's flight-controller and sensor integration phase. Format as a table with Task, Owner, Priority (High/Medium/Low), and Estimated Duration."
+### Meeting Minutes
 
-**Generated Output (sample):**
+**Meeting:** TechFusion 2026 Planning  
+**Date:** 01 September 2026
 
-| Task | Owner | Priority | Estimated Duration |
-|---|---|---|---|
-| Tune PID controller to fix hover drift | Member A | High | 3 days |
-| Mount and wire LiDAR sensor | Member B | High | 2 days |
-| Design sensor-fusion (IMU + LiDAR) architecture | Member C | Medium | 5 days |
-| Update GPS waypoint navigation logic | Member A | Medium | 4 days |
-| Conduct outdoor test flight #3 | All | High | 1 day |
-| Update project documentation | Member D | Low | 2 days |
-
----
-
-## 4. Project Scheduling (Automated)
-
-**Structured Prompt:**
-> "Generate a 6-week project schedule for the Drone Survey Project covering: hardware assembly, flight-controller tuning, sensor integration, field survey algorithm development, testing, and final report preparation. Present as a week-by-week table with milestones."
-
-**Generated Output (sample):**
-
-| Week | Phase | Milestone |
+| Discussion | Responsibility | Deadline |
 |---|---|---|
-| 1 | Hardware Assembly | Frame, motors, ESCs, flight controller assembled and powered on |
-| 2 | Flight-Controller Tuning | Stable hover achieved; PID tuning completed |
-| 3 | Sensor Integration | LiDAR + camera + GPS integrated and streaming data |
-| 4 | Survey Algorithm Development | Waypoint-based field-scan path planning implemented |
-| 5 | Field Testing | Two outdoor test flights completed; data validated against ground truth |
-| 6 | Reporting & Documentation | Final report, elevation/vegetation maps, and presentation completed |
+| Registration portal | Registration Team | 05 Sep |
+| Event rules | Faculty Coordinator | 07 Sep |
+| Registration desk | Student Volunteers | 18 Sep |
+| Projector and internet | Technical Team | 18 Sep |
+
+### Key Decision
+
+The symposium will be conducted on **20 September 2026**.
+
+### Action Items
+
+- Complete registration portal.
+- Finalize event rules.
+- Allocate volunteer teams.
+- Test technical equipment.
 
 ---
 
-## 5. Requirement Documentation (Automated)
+# 3. TASK PLANNING
 
-**Structured Prompt:**
-> "Generate a requirement document for the Drone Survey Project. Include: Functional Requirements, Non-Functional Requirements, Hardware Requirements, and Software Requirements, each as a bulleted list."
+## Purpose
 
-**Generated Output (sample):**
+Convert project objectives into actionable tasks.
 
-**Functional Requirements**
-- The drone shall autonomously follow a pre-planned waypoint path over the target field.
-- The system shall capture RGB and elevation (LiDAR) data during flight.
-- The system shall generate a vegetation health map and elevation contour map post-flight.
+## Prompt
 
-**Non-Functional Requirements**
-- The system shall maintain stable flight in wind speeds up to 20 km/h.
-- Data processing shall complete within 30 minutes of flight completion.
-- The system shall log flight telemetry for post-mission analysis.
+> Create a task plan for organizing a college technical symposium. Divide the work into major activities, assign a responsible team, define priority, and provide a deadline.
 
-**Hardware Requirements**
-- Quadcopter frame with brushless motors and ESCs.
-- Flight controller (e.g., Pixhawk) with GPS module.
-- LiDAR sensor and RGB camera payload.
+## Sample Output
 
-**Software Requirements**
-- Ground control station software for mission planning (e.g., QGroundControl).
-- Image-processing pipeline for orthomosaic and NDVI map generation.
-- Data storage and visualization dashboard.
+| Task | Responsible Team | Priority | Deadline |
+|---|---|---|---|
+| Select events | Faculty Team | High | 03 Sep |
+| Open registration | Registration Team | High | 05 Sep |
+| Contact judges | Faculty Team | Medium | 08 Sep |
+| Promote symposium | Media Team | High | 10 Sep |
+| Arrange venue | Logistics Team | High | 18 Sep |
+| Test equipment | Technical Team | High | 18 Sep |
+| Final rehearsal | All Teams | High | 19 Sep |
 
----
+## Benefit
 
-## 6. FAQ Generation (Automated)
-
-**Structured Prompt:**
-> "Generate a FAQ section (5 questions and answers) for stakeholders (farmers/faculty) evaluating the Drone Survey Project, covering cost, accuracy, flight time, data output, and safety."
-
-**Generated Output (sample):**
-
-1. **How accurate is the elevation and vegetation data?** The system targets sub-30cm elevation accuracy and NDVI-based vegetation health mapping, validated against ground-truth samples during testing.
-2. **What is the flight time per survey?** The drone can survey approximately 5–8 acres per flight on a single battery charge (~18–20 minutes flight time).
-3. **What does the survey report include?** An elevation contour map, a vegetation health (NDVI) map, and a summary report highlighting problem zones.
-4. **Is the drone safe to operate near people and livestock?** The drone maintains a minimum safe altitude and includes an automatic return-to-home failsafe if signal is lost or battery is low.
-5. **What is the estimated cost per survey?** Approximate operating cost is significantly lower than manual land surveying, primarily covering battery charging and minor equipment maintenance.
+Task planning becomes faster and responsibilities are easier to track.
 
 ---
 
-## Automated Workflow Documentation (Deliverable)
+# 4. PROJECT SCHEDULING
 
-The six automated outputs above were compiled into a single workflow package for the Drone Survey Project:
+## Purpose
 
+Create a timeline for completing the symposium activities.
+
+## Prompt
+
+> Create a project schedule for TechFusion 2026 from 1 September to 20 September 2026. Organize tasks chronologically and identify dependencies between tasks. Present the schedule in a table.
+
+## Sample Output
+
+| Activity | Start Date | End Date | Dependency |
+|---|---|---|---|
+| Event Finalization | 01 Sep | 03 Sep | None |
+| Registration Setup | 03 Sep | 05 Sep | Event Finalization |
+| Promotion | 05 Sep | 15 Sep | Registration Setup |
+| Judge Confirmation | 04 Sep | 08 Sep | Event Finalization |
+| Venue Preparation | 15 Sep | 18 Sep | Event Finalization |
+| Technical Testing | 18 Sep | 19 Sep | Venue Preparation |
+| Final Rehearsal | 19 Sep | 19 Sep | Technical Testing |
+| Symposium | 20 Sep | 20 Sep | All Tasks |
+
+---
+
+# 5. REQUIREMENT DOCUMENTATION
+
+## Purpose
+
+Generate a structured requirement document for the symposium management system.
+
+## Prompt
+
+> Prepare a Software Requirement Specification for a College Symposium Management System. Include functional requirements, non-functional requirements, users, system inputs, system outputs, and major modules.
+
+## Sample Output
+
+### Functional Requirements
+
+- Student registration
+- Event selection
+- Participant management
+- Attendance tracking
+- Schedule management
+- Certificate generation
+- Feedback collection
+
+### Non-Functional Requirements
+
+- Easy to use
+- Secure
+- Reliable
+- Fast response
+- Scalable
+
+### Users
+
+- Students
+- Faculty coordinators
+- Judges
+- Volunteers
+- Administrators
+
+### Main Modules
+
+```text
+User Management
+       ↓
+Event Management
+       ↓
+Registration
+       ↓
+Schedule Management
+       ↓
+Attendance
+       ↓
+Certificate Generation
+       ↓
+Feedback
 ```
-Drone Survey Project — Automated Documentation Workflow
-│
-├── 1. Communication
-│     └── Procurement approval email (LiDAR sensor)
-│
-├── 2. Meeting Management
-│     └── Weekly review meeting minutes with action items
-│
-├── 3. Task Planning
-│     └── 2-week sprint task breakdown (owner, priority, duration)
-│
-├── 4. Project Scheduling
-│     └── 6-week phase-wise project schedule with milestones
-│
-├── 5. Requirement Documentation
-│     └── Functional / Non-functional / Hardware / Software requirements
-│
-└── 6. Stakeholder Communication
-      └── FAQ document for farmers/faculty evaluators
+
+---
+
+# 6. FAQ GENERATION
+
+## Purpose
+
+Automatically generate answers to frequently asked participant questions.
+
+## Prompt
+
+> Generate frequently asked questions for a college technical symposium. Include registration, eligibility, events, venue, deadlines, certificates, and contact information. Present the result in a question-and-answer format.
+
+## Sample Output
+
+### FAQ
+
+**Q1. Who can participate?**  
+Students who meet the eligibility requirements of the respective event can participate.
+
+**Q2. What events are available?**  
+Paper Presentation, Coding Contest, and Project Expo.
+
+**Q3. What is the registration deadline?**  
+The registration deadline is 15 September 2026.
+
+**Q4. Where will the symposium be held?**  
+The event will be conducted at the Main Auditorium.
+
+**Q5. Will participants receive certificates?**  
+Participants can receive certificates according to the event rules.
+
+**Q6. How can I get support?**  
+Participants can contact the symposium organizing committee.
+
+---
+
+# 7. STRUCTURED PROMPT TEMPLATE
+
+A structured prompt can be written using the following components:
+
+```text
+ROLE
+ ↓
+TASK
+ ↓
+CONTEXT
+ ↓
+INPUT DATA
+ ↓
+CONSTRAINTS
+ ↓
+OUTPUT FORMAT
 ```
 
-This package demonstrates that a single engineering project's entire documentation lifecycle — from an approval email to stakeholder FAQs — can be generated consistently and quickly using structured, field-filled prompts rather than free-form requests.
+## Example
+
+> **Role:** Act as a college event coordinator.  
+> **Task:** Prepare a symposium schedule.  
+> **Context:** Technical symposium with multiple events.  
+> **Input:** Event list, dates, venue, staff availability.  
+> **Constraints:** Avoid schedule conflicts and maintain realistic timing.  
+> **Output Format:** Present the result as a table with activity, date, time, and responsible team.
 
 ---
 
-## Observations
+# 8. AUTOMATED WORKFLOW
 
-- **Structured prompts** (specifying exact fields, format, and audience) produced consistently usable, near-final outputs, unlike open-ended prompts which required more editing.
-- Reused project context (drone type, sensors, timeline) across all six prompts kept the outputs internally consistent — the same LiDAR procurement mentioned in the email also appeared correctly in the meeting minutes and task plan.
-- Documents like **meeting minutes** and **task tables** benefited most from structured prompting, since their value depends entirely on correct formatting.
-- **FAQ generation** required the most human review, since factual claims (accuracy figures, flight time) need to be verified against actual project test data before being shared with real stakeholders.
+## Combined Prompt Workflow
+
+```text
+Event Requirements
+       ↓
+AI Task Planner
+       ↓
+Project Schedule
+       ↓
+Requirement Document
+       ↓
+Meeting Minutes
+       ↓
+Email Generation
+       ↓
+FAQ Generation
+       ↓
+Final Workflow Report
+```
+
+### Example Automation
+
+```text
+Input:
+"TechFusion 2026, 20 September, 3 events"
+
+        ↓
+
+Task Planning
+        ↓
+
+Registration + Promotion + Venue + Technical Setup
+
+        ↓
+
+Scheduling
+        ↓
+
+Dates + Dependencies + Responsibilities
+
+        ↓
+
+Documentation
+        ↓
+
+Requirements + Meeting Minutes
+
+        ↓
+
+Communication
+        ↓
+
+Emails + FAQs
+```
 
 ---
 
-## Conclusion
+# COMPARISON OF MANUAL AND AI WORKFLOW
 
-Structured prompting proved highly effective for automating routine but essential project-documentation tasks — email writing, meeting minutes, task planning, scheduling, requirement documentation, and FAQ generation — for the Drone Survey Project. By specifying role, context, required fields, and output format in each prompt, the AI consistently produced professional, ready-to-use documentation, significantly reducing the manual effort typically spent on project administration and allowing the team to focus more time on core engineering work.
+| Activity | Manual Process | AI-Assisted Process |
+|---|---|---|
+| Email Writing | Time-consuming | Fast |
+| Meeting Minutes | Manual preparation | Automatically structured |
+| Task Planning | Requires manual organization | Generated instantly |
+| Scheduling | Manual coordination | Faster planning |
+| Requirement Documentation | Requires more effort | Structured automatically |
+| FAQ Generation | Manually written | Generated from context |
+| Consistency | Depends on writer | More consistent |
+| Productivity | Moderate | High |
 
 ---
 
-## Result
+# OBSERVATION
 
-The structured prompts for automating Email Writing, Meeting Minutes, Task Planning, Project Scheduling, Requirement Documentation, and FAQ Generation were executed successfully for the Drone Survey Project, and the outputs were compiled into a complete Automated Workflow Documentation deliverable.
+- Structured prompts make workflow automation more consistent and organized.
+- AI can generate emails, meeting minutes, task lists, schedules, requirements, and FAQs from the same project information.
+- Using clear roles, context, constraints, and output formats improves the usefulness of generated results.
+- Human review is still required before using AI-generated content in real project communication.
+
+---
+
+# RESULT
+
+A structured AI-assisted workflow was successfully designed for **College Symposium Management**. AI was used to automate email writing, meeting minutes, task planning, project scheduling, requirement documentation, and FAQ generation.
+
+---
+
+# CONCLUSION
+
+Prompt engineering can automate repetitive workflow activities and reduce manual effort in project management. Structured prompts provide consistent and well-organized outputs, while human verification ensures that the generated information is correct and suitable for real-world use. The experiment demonstrates that Generative AI can act as an effective assistant for managing engineering and academic project workflows.
+
+---
+
+# DELIVERABLE
+
+**Automated Workflow Documentation for College Symposium Management**
